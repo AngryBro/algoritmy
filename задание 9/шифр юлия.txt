@@ -1,0 +1,45 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+int i,k, l,n;
+string alf="ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ";
+string input;
+getline(cin,input);
+cin>>k;
+l=input.length();
+for(i=0;i<l;i++)
+{
+    if(input[i]=='A') n=26;
+    if(input[i]=='B') n=27;
+    if(input[i]=='C') n=28;
+    if(input[i]=='D') n=29;
+    if(input[i]=='E') n=30;
+    if(input[i]=='F') n=31;
+    if(input[i]=='G') n=32;
+    if(input[i]=='H') n=33;
+    if(input[i]=='I') n=34;
+    if(input[i]=='J') n=35;
+    if(input[i]=='K') n=36;
+    if(input[i]=='L') n=37;
+    if(input[i]=='M') n=38;
+    if(input[i]=='N') n=39;
+    if(input[i]=='O') n=40;
+    if(input[i]=='P') n=41;
+    if(input[i]=='Q') n=42;
+    if(input[i]=='R') n=43;
+    if(input[i]=='S') n=44;
+    if(input[i]=='T') n=45;
+    if(input[i]=='U') n=46;
+    if(input[i]=='V') n=47;
+    if(input[i]=='W') n=48;
+    if(input[i]=='X') n=49;
+    if(input[i]=='Y') n=50;
+    if(input[i]=='Z') n=51;
+    n=n-k;
+    input[i]=alf[n];
+}
+cout<<input;
+}

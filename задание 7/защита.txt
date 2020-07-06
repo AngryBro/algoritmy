@@ -1,0 +1,18 @@
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+string input;
+bool chet=false;
+int sum=0, l, i;
+getline(cin,input);
+l=input.length();
+for(i=0;i<l-1;i++)
+sum+=int(input[i]-'0');
+if(sum%2==0) chet=true;
+if(((chet)&&(input[l-1]=='e'))||((!chet)&&(input[l-1]=='o'))) input[l-1]='0'; else input[l-1]='1';
+cout<<input;
+}
